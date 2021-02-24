@@ -22,8 +22,15 @@
 				<h1 class="display-4">Hello, User!</h1>
 			</div>
 
-			<div class="col-1 offset-2 align-self-center">
-				<button type="button" class="btn btn-light fas fa-bars fa-2x" onclick="location.href='#'"></button>
+			<div class="col-1 offset-2 align-self-center dropdown">
+				<button type="button" class="btn btn-light fas fa-bars fa-2x" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Profile</a>
+					<a class="dropdown-item" href="#">Help</a>
+    				<a class="dropdown-item" href="#">Settings</a>
+					<div class="dropdown-divider"></div>
+    				<a class="dropdown-item" href="/login">Sign Out</a>
+  				</div>
 			</div>
 		</div>
 
