@@ -23,5 +23,9 @@
 
 .btn-primary {
     background-color: DodgerBlue;
-  }
+}
 
+.btn-fb {
+    background-color: #3b5998;
+    color: white;
+}
