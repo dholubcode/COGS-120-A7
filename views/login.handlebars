@@ -11,6 +11,7 @@
 	{{!-- <link href="/css/bootstrap.css" rel="stylesheet"> --}}
 	{{!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> --}}
 	<link rel="stylesheet" href="/css/styles.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -23,14 +24,47 @@
 			</div>
 		</div>
 
-		<div align = "center">
+		{{!-- This was the original login page.
+		Feel free to uncomment this and delete the other one if you'd like --}}
+		{{!-- <div align = "center">
 			<input type="email" placeholder = "Email"><br><br>
 			<input type = "password" placeholder = "Password"><br><br>
 			<button type="button" class="btn btn-primary" onclick="location.href='/signup'">Sign Up</button>
 			<button type="button" class="btn btn-primary" onclick="location.href='/index'">Login</button><br><br>
 			<p>or connect with</p>
 			<button type="button" class="btn btn-fb" onclick="location.href='/'">Facebook</button>
+		</div> --}}
+
+		<div class="row justify-content-center mt-0">
+			<form>
+				<div class="form-group col-sm-8 col-md-6 col-lg-4 col-8 mt-3 mx-auto">
+					<label for="Email">Email address</label>
+					<input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" name="user-email">
+				</div>
+				
+				<div class="form-group col-sm-8 col-md-6 col-lg-4 col-8 mt-3 mx-auto">
+					<label for="Password">Password</label>
+					<input type="password" class="form-control" id="Password" placeholder="Password" name="user-password">
+				</div>
+
+				{{!-- This should be type="submit"; I set it to type="button" to use 'onclick' --}}
+				<div class="text-center mt-3">
+					<button type="button" class="btn btn-primary btn-lg" onclick="location.href='/index'">Login</button>
+				</div>
+
+				<div class="form-group text-center mt-5">
+					<p>No account? No problem! Sign up here.</p>
+					<button type="button" class="btn btn-primary" onclick="location.href='/signup'">Sign Up</button>
+				</div>
+
+				<div class="form-group text-center mt-3">
+					<small class="form-text">Or connect with </small>
+					<button type="button" class="btn btn-fb btn-sm" onclick="location.href='/'">Facebook</button>
+				</div>
+			</form>
 		</div>
+
+
 	</div>
 </body>
 </html>

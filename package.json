@@ -15,7 +15,7 @@
     "bootstrap": "^5.0.0-beta2",
     "bootstrap-icons": "^1.4.0",
     "express": "^3.21.2",
-    "express3-handlebars": "*",
+    "express3-handlebars": "^0.5.2",
     "mongodb": "^3.6.4",
     "mongoose": "^5.11.17"
   },
