@@ -13,6 +13,7 @@ var index = require('./routes/index');
 var activity = require('./routes/activity');
 var login = require('./routes/login')
 var signup = require('./routes/signup')
+var wellness = require('./routes/wellness')
 
 var app = express();
 
@@ -39,7 +40,7 @@ if ('development' == app.get('env')) {
 app.get('/', login.view)
 app.get('/index', index.view);
 app.get('/activity', activity.view)
-// app.get('/login', login.view)
+app.get('/wellness', wellness.view)
 app.get('/signup', signup.view)
 // Example route
 // app.get('/users', user.list);
