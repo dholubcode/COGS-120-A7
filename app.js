@@ -13,6 +13,7 @@ var index = require('./routes/index');
 var activity = require('./routes/activity');
 var login = require('./routes/login')
 var signup = require('./routes/signup')
+// var addData = require('./routes/userInput.js')
 
 var app = express();
 
@@ -41,6 +42,7 @@ app.get('/index', index.view);
 app.get('/activity', activity.view)
 // app.get('/login', login.view)
 app.get('/signup', signup.view)
+// app.get('/addInfo', addData.view)
 // Example route
 // app.get('/users', user.list);
 

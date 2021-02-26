@@ -6,6 +6,8 @@ var data = require('../activity.json');
 
 
 exports.view = function(request, response){
-	console.log(data);
+	// console.log(data);
 	response.render('activity', data);
 };
+
+

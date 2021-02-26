@@ -29,3 +29,19 @@
     background-color: #3b5998;
     color: white;
 }
+
+.activity-btn:hover, .mood-btn:hover, .symptom-btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* .activity-btn:focus, .mood-btn:focus, .symptom-btn:focus {
+    background-color: #80dfff;
+} */
+
+/* .mood-btn:active {
+    background-color: #80dfff;
+} */
+
+.pressed {
+    background-color: #80dfff;
+}
