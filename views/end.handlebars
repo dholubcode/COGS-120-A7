@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 
 </head>
-<body class="wellness-routine">
+<body class="end-day">
 
 <div class="container">
     <div class="row d-flex justify-content-around my-3">
@@ -24,7 +24,7 @@
 
         <div class="col-4 title-header">
             <div class="jumbotron">
-                <h1 class="display-4">Wellness Routine</h1>
+                <h1 class="display-4">End Day</h1>
             </div>
         </div>
 
@@ -47,27 +47,30 @@
 
     <div class="row mb-1">
         <div class="col-sm-9 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-11 offset-1">
-            <h3>Add a daily wellness activity:</h3>
+            <h3>What time are you sleeping?</h3>
         </div>
     </div>
 
+    <form class = "row">
+        <input type="time" class = "text-center" id="sleep" name="sleep">
+    </form><br>
 
-    <div class="row gx-0 row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 mb-3">
-        {{#each wellness}}
+    {{!-- <div class="row gx-0 row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 mb-3">
+        {{#each activity}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">{{this}}</button></div>
         {{/each}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">Add <i class="fas fa-plus"></i></button></div>
-    </div>
+    </div> --}}
 
 
     <div class="row mb-1">
         <div class="col-sm-9 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-11 offset-1">
-            <h3>Add daily supplements:</h3>
+            <h3>How are you feeling?</h3>
         </div>
     </div>
 
     <div class="row gx-0 row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 mb-3">
-        {{#each supplements}}
+        {{#each mood}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">{{this}}</button></div>
         {{/each}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">Add <i class="fas fa-plus"></i></button></div>
@@ -83,32 +86,22 @@
 
     <div class="row mb-1">
         <div class="col-sm-9 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-11 offset-1">
-            <h3>Add daily medications:</h3>
+            <h3>Any physical symptoms?</h3>
         </div>
     </div>
 
     <div class="row gx-0 row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 mb-3">
-        {{#each medication}}
+        {{#each symptom}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">{{this}}</button></div>
         {{/each}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">Add <i class="fas fa-plus"></i></button></div>
     </div>
 
-        <div class = "pull-left">
-                <button type="button" class="btn btn-primary" onclick="location.href='/index'"><i class="fas fa-arrow-left"></i> Back</button>
-            </div>
+        {{!-- Button should be submit type I think --}}
         <div class = "pull-right">
-                <button type="button" class="btn btn-primary" onclick="location.href='#'">Next <i class="fas fa-arrow-right"></i></button>
+                <button type="button" class="btn btn-primary" onclick="location.href='#'">Save</button>
             </div>
     </div>
-
-    {{!-- <div class="row justify-content-center my-5">
-        <div class="col-5 text-center">
-            <button class="btn btn-lg btn-secondary fas fa-home" onclick="location.href='/index'"></Button>
-        </div>
-    </div> --}}
-
-    
 
 </div>
 
