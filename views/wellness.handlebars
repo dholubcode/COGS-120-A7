@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 
 </head>
-<body class="log-activity">
+<body class="wellness-routine">
 
 <div class="container">
     <div class="row d-flex justify-content-around my-3">
@@ -24,7 +24,7 @@
 
         <div class="col-4 title-header">
             <div class="jumbotron">
-                <h1 class="display-4">Log Activity</h1>
+                <h1 class="display-4">Wellness Routine</h1>
             </div>
         </div>
 
@@ -47,13 +47,13 @@
 
     <div class="row mb-1">
         <div class="col-sm-9 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-11 offset-1">
-            <h3>What did you do?</h3>
+            <h3>Add a daily wellness activity:</h3>
         </div>
     </div>
 
 
     <div class="row gx-0 row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 mb-3">
-        {{#each activity}}
+        {{#each wellness}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">{{this}}</button></div>
         {{/each}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">Add <i class="fas fa-plus"></i></button></div>
@@ -62,12 +62,12 @@
 
     <div class="row mb-1">
         <div class="col-sm-9 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-11 offset-1">
-            <h3>How did that make you feel?</h3>
+            <h3>Add daily supplements:</h3>
         </div>
     </div>
 
     <div class="row gx-0 row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 mb-3">
-        {{#each mood}}
+        {{#each supplements}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">{{this}}</button></div>
         {{/each}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">Add <i class="fas fa-plus"></i></button></div>
@@ -83,12 +83,12 @@
 
     <div class="row mb-1">
         <div class="col-sm-9 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-11 offset-1">
-            <h3>Any physical symptoms?</h3>
+            <h3>Add daily medications:</h3>
         </div>
     </div>
 
     <div class="row gx-0 row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 mb-3">
-        {{#each symptom}}
+        {{#each medication}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">{{this}}</button></div>
         {{/each}}
         <div class="col text-center mb-3"><button type="button" class="btn btn-light">Add <i class="fas fa-plus"></i></button></div>
