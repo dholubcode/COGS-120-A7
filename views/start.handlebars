@@ -51,8 +51,10 @@
         </div>
     </div>
 
-    <form class = "row">
-        <input type="time" class = "text-center" id="wake" name="wake">
+    <form>
+        <div class = "row form-group col-sm-8 col-md-6 col-lg-4 col-8 mt-3 mx-auto">
+            <input type="time" class = "text-center" id="wake" name="wake">
+        </div>
     </form><br>
 
     {{!-- <div class="row gx-0 row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 mb-3">
@@ -98,6 +100,10 @@
     </div>
 
         {{!-- Button should be submit type I think --}}
+        <div class = "pull-left">
+                <button type="button" class="btn btn-primary" onclick="location.href='/index'"> Back</button>
+            </div>
+
         <div class = "pull-right">
                 <button type="button" class="btn btn-primary" onclick="location.href='/index'">Save</button>
             </div>
