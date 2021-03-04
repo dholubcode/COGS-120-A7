@@ -22,16 +22,18 @@
 <body>
 {{!-- Begin here (or replace this with any static code already written). --}}
 <div class="container">
-    <div class="row d-flex justify-content-around mt-3">
-        <div class="col-3"></div>
+    <div class="row align-items-center" style="margin: 15px;">
+        <div class="col"></div>
 
-        <div class="col-4 title-header">
+		<div class="col"></div>
+
+        {{!-- <div class="col-4 title-header">
             <div class="jumbotron">
                 <h1 class="display-4">Hello, User!</h1>
             </div>
-        </div>
+        </div> --}}
 
-		<div class="col-3 dropdown text-center">
+		<div class="col" align="center">
 			<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 				<i class="fas fa-bars"> </i>
 			</button>
@@ -46,7 +48,21 @@
 		</div>
     </div>
 
-	<p class="lead col text-center my-2" id="currentDate"></p>
+	<div class="row align-items-center">
+		<div class="col"></div>
+
+		<div class="col" align="center">
+        	<div class="jumbotron">
+            	<h1 id="name">Hello, User!</h1>
+        	</div>
+    	</div>
+
+		<div class="col"></div>
+	</div>
+	
+	<div class="col"></div>
+		<p class="lead col text-center my-2" id="currentDate"></p>
+	</div>
 
 	<hr class="mb-4">
 
