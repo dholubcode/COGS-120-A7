@@ -16,6 +16,7 @@ var signup = require('./routes/signup')
 var wellness = require('./routes/wellness')
 var start = require('./routes/start')
 var end = require('./routes/end')
+var summary = require('./routes/summary')
 
 var app = express();
 
@@ -46,6 +47,7 @@ app.get('/wellness', wellness.view)
 app.get('/signup', signup.view)
 app.get('/start', start.view)
 app.get('/end', end.view)
+app.get('/summary', summary.view)
 // Example route
 // app.get('/users', user.list);
 
