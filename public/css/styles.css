@@ -29,3 +29,15 @@
     background-color: #3b5998;
     color: white;
 }
+
+.act-pressed, .mood-pressed, .symp-pressed {
+    background-color: #80dfff;
+}
+
+.activity-btn:hover, .mood-btn:hover, .symptom-btn:hover {
+    background-color: #e6e6e6;
+}
+
+#add-activity:hover, #add-mood:hover, #add-symptom:hover {
+    background-color: #e6e6e6;
+}
