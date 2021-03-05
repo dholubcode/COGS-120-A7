@@ -17,6 +17,8 @@ var signup = require('./routes/signup')
 // var start = require('./routes/start')
 // var end = require('./routes/end')
 var getData = require('./routes/getData')
+var summary = require('./routes/summary')
+var routine = require('./routes/routine')
 
 var app = express();
 
@@ -50,7 +52,8 @@ app.get('/signup', signup.view)
 app.get('/start', getData.startDay)
 app.get('/end', getData.endDay)
 app.get('/data/:page', getData.showData)
-
+app.get('/summary', summary.view)
+app.get('/routine', routine.view)
 // Example route
 // app.get('/users', user.list);
 
