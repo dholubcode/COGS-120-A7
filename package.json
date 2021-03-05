@@ -16,6 +16,8 @@
     "bootstrap-icons": "^1.4.0",
     "express": "^3.21.2",
     "express3-handlebars": "^0.5.2",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.4.0",
     "mongodb": "^3.6.4",
     "mongoose": "^5.11.17"
   },

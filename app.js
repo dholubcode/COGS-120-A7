@@ -10,12 +10,13 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 // Example route
-var activity = require('./routes/activity');
+// var activity = require('./routes/activity');
 var login = require('./routes/login')
 var signup = require('./routes/signup')
-var wellness = require('./routes/wellness')
-var start = require('./routes/start')
-var end = require('./routes/end')
+// var wellness = require('./routes/wellness')
+// var start = require('./routes/start')
+// var end = require('./routes/end')
+var getData = require('./routes/getData')
 
 var app = express();
 
@@ -41,11 +42,15 @@ if ('development' == app.get('env')) {
 
 app.get('/', login.view)
 app.get('/index', index.view);
-app.get('/activity', activity.view)
-app.get('/wellness', wellness.view)
+// app.get('/activity', activity.view)
+app.get('/activity', getData.viewActivity)
+app.get('/wellness', getData.viewWellness)
+// app.get('/wellness', wellness.view)
 app.get('/signup', signup.view)
-app.get('/start', start.view)
-app.get('/end', end.view)
+app.get('/start', getData.startDay)
+app.get('/end', getData.endDay)
+app.get('/data/:page', getData.showData)
+
 // Example route
 // app.get('/users', user.list);
 
