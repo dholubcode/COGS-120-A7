@@ -1,5 +1,5 @@
 {
     "activity": ["Jog", "Read", "Homework", "Work", "Visit a friend"],
     "mood": ["Mad", "Sad", "Excited", "Happy", "Indifferent"],
-    "symptom": ["Headache", "Fatigue", "Stress", "None"]
+    "symptom": ["Headache", "Fatigue", "Restless", "None"]
 }
